@@ -12,9 +12,12 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Etudiant {
+public class Etudiant extends Utilisateur{
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private int niveau ;
+    private int pointsExp;
+    private int classement;
+    private int coursTermines;
+    private int nombreMiniJeuxTermines;
 
 }
